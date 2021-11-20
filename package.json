@@ -1,0 +1,21 @@
+{
+  "name": "audreyadelaide_3_20112021",
+  "version": "1.0.0",
+  "description": "AudreyAdelaide_3_20112021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudreyAdelaide/AudreyAdelaide_3_20112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/AudreyAdelaide/AudreyAdelaide_3_20112021/issues"
+  },
+  "homepage": "https://github.com/AudreyAdelaide/AudreyAdelaide_3_20112021#readme"
+}
