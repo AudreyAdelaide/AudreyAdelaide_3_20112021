@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
+@import "./utils/variables";
+@import "./utils/mixins";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "./base/base";
 
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/call-to-action";
+@import "./layout/home-container";
+@import "./layout/command-steps";
+@import "./layout/home-restaurants";

@@ -1,0 +1,12 @@
+.call-to-action {
+  &__btn {
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    margin: 25px 0;
+    box-shadow: 0 2px 5px rgb(148, 148, 148);
+    @include linearGradient;
+  }
+}
