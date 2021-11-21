@@ -192,4 +192,23 @@ main section {
   background-clip: text;
 }
 
+.footer-container {
+  background: #292929;
+  color: #fff;
+  padding: 30px;
+}
+.footer-container__title {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 100;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.footer-container li {
+  line-height: 1.7em;
+}
+.footer-container a {
+  color: #fff;
+  font-weight: 100;
+}
+
 /*# sourceMappingURL=style.css.map */
