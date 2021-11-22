@@ -1,4 +1,5 @@
 .restaurants__item {
+  position: relative;
   margin-top: 20px;
   padding-bottom: 10px;
   width: 100%;
@@ -30,7 +31,7 @@
     font-size: 1.5em;
     &:hover {
       font-weight: 900;
-      @include heartIconGradient;
+      @include iconHover;
     }
   }
 }

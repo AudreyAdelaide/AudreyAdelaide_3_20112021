@@ -37,6 +37,7 @@ main section {
 }
 
 .restaurants__item {
+  position: relative;
   margin-top: 20px;
   padding-bottom: 10px;
   width: 100%;
@@ -74,6 +75,7 @@ main section {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  transition: all 1s ease-in-out;
 }
 
 /*--------[ HEADER ]---------*/
@@ -192,6 +194,16 @@ main section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.restaurants__new-feature {
+  position: absolute;
+  font-size: 0.9em;
+  right: 10px;
+  top: 20px;
+  padding: 7px 13px;
+  color: #038d5f;
+  background: #86e2c3;
+  border-radius: 2px;
 }
 
 .footer-container {
