@@ -1,9 +1,12 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/placeholders";
 
 @import "./base/base";
 
+@import "./components/animations";
 @import "./components/buttons";
+@import "./components/cards";
 
 @import "./layout/header";
 @import "./layout/call-to-action";
