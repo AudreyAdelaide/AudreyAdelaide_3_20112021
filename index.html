@@ -6,20 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loader__container">
+            <div class="loader__dot"></div>
+            <div class="loader__dot"></div>
+            <div class="loader__dot"></div>
+            <div class="loader__dot"></div>
+            <div class="loader__dot"></div>
+        </div>
+    </div>
     <!-- HEADER -->
     <header class="header">
         <h1 class="header__logo">
-            <img src="/public/img/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
+            <img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         </h1>
     </header>
 
     <!-- RECHERCHE & CALL TO ACTION -->
-    <section class="call-to-action">
+
+    <section class="call-to-action wrapper">
         <div class="call-to-action__position">
             <div class="call-to-action__position__container">
                 <i class="fas fa-map-marker-alt"></i>
@@ -37,30 +47,30 @@
         </div>
     </section>
 
-    <main class="home-container">
+    <!-- COMMANDS STEPS -->
+    <section class="command-steps wrapper">
+        <h1 class="command-steps__title">Fonctionnement</h1>
 
-        <!-- COMMANDS STEPS -->
-        <section class="command-steps">
-            <h1 class="command-steps__title">Fonctionnement</h1>
+        <ul class="command-steps__items">
+            <li>
+                <p class="number">1</p><i class="icon fas fa-mobile-alt"></i>
+                <p class="text">Choisissez un restaurant</p>
+            </li>
+            <li>
+                <p class="number">2</p><i class="icon fas fa-list"></i>
+                <p class="text">Composez votre menu</p>
+            </li>
+            <li class="highlight">
+                <p class="number">3</p><i class="icon fas fas fa-store"></i>
+                <p class="text">Dégustez au restaurant</p>
+            </li>
+        </ul>
+    </section>
 
-            <ul class="command-steps__items">
-                <li>
-                    <p class="number">1</p><i class="icon fas fa-mobile-alt"></i>
-                    <p class="text">Choisissez un restaurant</p>
-                </li>
-                <li>
-                    <p class="number">2</p><i class="icon fas fa-list"></i>
-                    <p class="text">Composez votre menu</p>
-                </li>
-                <li class="highlight">
-                    <p class="number">3</p><i class="icon fas fas fa-store"></i>
-                    <p class="text">Dégustez au restaurant</p>
-                </li>
-            </ul>
-        </section>
+    <div class="home-container">
 
         <!-- RESTAURANTS LIST -->
-        <section class="restaurants">
+        <section class="restaurants wrapper">
             <h1 class="restaurants__title">Restaurants</h1>
 
             <div class="restaurants__cards">
@@ -124,10 +134,10 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
     <!-- FOOTER -->
-    <footer class="footer-container">
+    <footer class="footer-container wrapper">
         <h1 class="footer-container__title">ohmyfood</h1>
         <ul class="footer-container__links">
             <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
