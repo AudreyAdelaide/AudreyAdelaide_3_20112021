@@ -16,3 +16,14 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin iconHover {
+  @include heartIconGradient;
+  transition: all 1s ease-in-out;
+}
