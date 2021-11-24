@@ -1,3 +1,4 @@
+// ----------- [ Project colors
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
@@ -5,3 +6,10 @@ $tertiary-color: #99e2d0;
 $dark-grey-color: #353535;
 $medium-grey-color: #eaeaea;
 $light-grey-color: #f6f6f6;
+
+// -> Ligntness color
+$primary-color-lightness: lighten(#9356dc, 2%);
+$secondary-color-lightness: lighten(#ff79da, 2%);
+
+// ----------- [ Fonts
+$letterSpacing: 1px;

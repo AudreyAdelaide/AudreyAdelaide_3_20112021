@@ -1,0 +1,28 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8em;
+}
+
+.explorer {
+  &__localisation {
+    font-weight: 500;
+  }
+  &__quote {
+    & h1 {
+      font-size: 1.6em;
+    }
+    & p {
+      font-size: 1.1em;
+      font-weight: 100;
+    }
+  }
+}
+
+.footer-logo {
+  font-weight: 100;
+  font-size: 1.5em;
+}

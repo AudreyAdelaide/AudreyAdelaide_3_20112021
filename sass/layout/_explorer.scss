@@ -1,0 +1,19 @@
+.explorer {
+  background: $light-grey-color;
+  text-align: center;
+  padding-bottom: 55px;
+  &__localisation {
+    height: 50px;
+    background: $medium-grey-color;
+    @include flexCenter;
+    & .fas {
+      margin-right: 20px;
+    }
+  }
+  &__quote {
+    padding: 35px;
+    & h1 {
+      margin-bottom: 12px;
+    }
+  }
+}

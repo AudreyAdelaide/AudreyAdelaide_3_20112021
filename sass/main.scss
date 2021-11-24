@@ -2,6 +2,7 @@
 @import "./utils/mixins";
 
 @import "./base/base";
+@import "./base/typography";
 
 @import "./components/loader";
 @import "./components/animations";
@@ -9,6 +10,7 @@
 @import "./components/cards";
 
 @import "./layout/header";
+@import "./layout/explorer";
 @import "./layout/call-to-action";
 @import "./layout/home-container";
 @import "./layout/command-steps";
