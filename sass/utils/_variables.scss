@@ -7,9 +7,8 @@ $dark-grey-color: #353535;
 $medium-grey-color: #eaeaea;
 $light-grey-color: #f6f6f6;
 
-// -> Ligntness color
-$primary-color-lightness: lighten(#9356dc, 2%);
-$secondary-color-lightness: lighten(#ff79da, 2%);
+$icon-grey-color: #7e7e7e;
 
-// ----------- [ Fonts
-$letterSpacing: 1px;
+// -> Ligntness color for btn gradient hover
+$primary-color-lightness: lighten(#9356dc, 5%);
+$secondary-color-lightness: lighten(#ff79da, 5%);
