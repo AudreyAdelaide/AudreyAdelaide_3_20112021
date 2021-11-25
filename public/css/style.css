@@ -359,15 +359,18 @@ h2 {
   justify-content: space-between;
   align-items: flex-end;
   background: #fff;
-  height: 70px;
+  height: 75px;
   border-radius: 20px;
   box-shadow: 0 3px 15px #d6d6d6;
   margin: 15px 0;
   overflow: hidden;
 }
 .menu-card__infos {
+  height: 100%;
   padding: 10px;
-  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .menu-card__title {
   font-size: 1em;
@@ -409,6 +412,9 @@ h2 {
   align-items: center;
   transform: rotate(360deg);
   transition: 0.4s;
+}
+.menu-card:hover .menu-card__price {
+  margin-left: 0;
 }
 .menu-card:hover .menu-card__check-icon {
   margin-right: 0;

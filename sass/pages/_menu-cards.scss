@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: flex-end;
   background: #fff;
-  height: 70px;
+  height: 75px;
   border-radius: 20px;
   box-shadow: 0 3px 15px rgb(214, 214, 214);
   margin: 15px 0;
@@ -27,8 +27,11 @@
   overflow: hidden;
 
   &__infos {
+    height: 100%;
     padding: 10px;
-    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   &__title {
     font-size: 1em;
@@ -68,6 +71,9 @@
     }
   }
   &:hover {
+    .menu-card__price {
+      margin-left: 0;
+    }
     .menu-card__check-icon {
       margin-right: 0;
     }
