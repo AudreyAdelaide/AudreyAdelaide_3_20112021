@@ -1,0 +1,78 @@
+.menu-cards {
+  hr {
+    width: 40px;
+    height: 2px;
+    border: none;
+    background: $tertiary-color;
+    margin: 5px 0;
+  }
+}
+
+.menu-list {
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgb(214, 214, 214);
+  margin: 15px 0;
+
+  overflow: hidden;
+
+  &__infos {
+    padding: 10px;
+    line-height: 1.5em;
+  }
+  &__title {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  &__description {
+    font-size: 0.9em;
+    font-weight: 100;
+  }
+  & .right-wrap {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
+  &__price {
+    margin: 0 20px 10px;
+    font-weight: 500;
+  }
+  &__check-icon {
+    background: $tertiary-color;
+    height: 100%;
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    @include flexCenter;
+    margin-right: -60px;
+    transition: 0.4s;
+    & .fa-check {
+      font-size: 0.7em;
+      color: $tertiary-color;
+      background: #fff;
+      border-radius: 100%;
+      height: 20px;
+      width: 20px;
+      @include flexCenter;
+      transform: rotate(180deg);
+      transition: 0.4s;
+    }
+  }
+  &:hover {
+    .menu-card__check-icon {
+      margin-right: 0;
+    }
+    .fa-check {
+      transform: rotate(0deg);
+    }
+  }
+}

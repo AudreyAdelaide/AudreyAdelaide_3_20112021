@@ -24,9 +24,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .logo {
   font-family: "Shrikhand", cursive;
   font-size: 1.8em;
+  font-weight: 500;
 }
 
 .header__back-link a {
@@ -176,6 +183,7 @@ body {
     transform: translate(24px, 0);
   }
 }
+/* animation hide/show menu check icon */
 /*---------- [ BUTTONS ] --------- */
 .btn {
   border-radius: 50px;
@@ -201,6 +209,117 @@ body {
   padding: 50px 20px;
 }
 
+.hero {
+  width: 100%;
+  height: 270px;
+}
+.hero__background {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  margin-top: -70px;
+  position: relative;
+}
+.menu .wrapper--menu {
+  border-radius: 50px 50px 0 0;
+  padding-top: 40px;
+  background: #f6f6f6;
+}
+.menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__like {
+  font-size: 1.7em;
+}
+.menu__order-btn {
+  text-align: center;
+}
+.menu__btn {
+  width: 180px;
+}
+
+.menu-cards hr {
+  width: 40px;
+  height: 2px;
+  border: none;
+  background: #99e2d0;
+  margin: 5px 0;
+}
+
+.menu-list {
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: #fff;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px #d6d6d6;
+  margin: 15px 0;
+  overflow: hidden;
+}
+.menu-card__infos {
+  padding: 10px;
+  line-height: 1.5em;
+}
+.menu-card__title {
+  font-size: 1em;
+  font-weight: 600;
+}
+.menu-card__description {
+  font-size: 0.9em;
+  font-weight: 100;
+}
+.menu-card .right-wrap {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.menu-card__price {
+  margin: 0 20px 10px;
+  font-weight: 500;
+}
+.menu-card__check-icon {
+  background: #99e2d0;
+  height: 100%;
+  width: 60px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -60px;
+  transition: 0.4s;
+}
+.menu-card__check-icon .fa-check {
+  font-size: 0.7em;
+  color: #99e2d0;
+  background: #fff;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+.menu-card:hover .menu-card__check-icon {
+  margin-right: 0;
+}
+.menu-card:hover .fa-check {
+  transform: rotate(0deg);
+}
+
 /*--------[ HEADER ]---------*/
 .header {
   position: relative;
@@ -216,7 +335,8 @@ body {
 }
 .header__back-link a {
   position: absolute;
-  top: 37%;
+  top: 35%;
+  left: 20px;
 }
 .header__back-link a:visited {
   text-decoration: none;
