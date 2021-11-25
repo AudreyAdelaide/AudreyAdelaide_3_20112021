@@ -74,6 +74,7 @@ body {
   font-size: 1.5em;
 }
 
+/*---------- [ LOADER ] --------- */
 .loader {
   display: inline-block;
   text-align: center;
@@ -99,7 +100,6 @@ body {
   height: 25px;
   border-radius: 50%;
   box-shadow: 0 5px 5px #a5a5a5;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .loader__dot:nth-child(1) {
   background: grey;
@@ -171,6 +171,7 @@ body {
     transform: translate(24px, 0);
   }
 }
+/*---------- [ BUTTONS ] --------- */
 .btn {
   border-radius: 50px;
   padding: 15px 21px;
@@ -225,6 +226,7 @@ body {
   transition: transform 0.3s ease;
 }
 
+/*---------- [ RESTAURANTS EXPLORER ] --------- */
 .explorer {
   background: #f6f6f6;
   text-align: center;
@@ -296,6 +298,12 @@ body {
   color: #7e7e7e;
 }
 
+/*---------- [ RESTAURANTS SECTION ] --------- */
+.restaurants {
+  width: 100%;
+  background: #f6f6f6;
+}
+
 /* RESTAURANT CARD */
 .restaurant {
   position: relative;
@@ -348,56 +356,7 @@ body {
   display: none;
 }
 
-.command-steps {
-  width: 100%;
-}
-.command-steps__items {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.command-steps__items li {
-  width: 100%;
-  height: 80px;
-  margin: 20px 0;
-  display: flex;
-  align-items: center;
-  background: #f1f1f1;
-  box-shadow: 0 5px 15px lightgray;
-  border-radius: 15px;
-}
-.command-steps__items .number {
-  background: #9356dc;
-  color: #fff;
-  font-size: 0.9em;
-  width: 21px;
-  height: 21px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -10px;
-  margin-right: 20px;
-}
-.command-steps__items .icon {
-  font-size: 1.2em;
-  margin-right: 20px;
-  color: grey;
-}
-.command-steps__items .highlight {
-  background: rgba(207, 170, 255, 0.322);
-}
-.command-steps__items .highlight .icon {
-  color: #9356dc;
-}
-
-.restaurants {
-  width: 100%;
-  background: #f6f6f6;
-}
-
+/*---------- [ FOOTER ] --------- */
 .footer-container {
   background: #292929;
   color: #fff;
