@@ -41,4 +41,26 @@
   }
 }
 
-/* animation hide/show menu check icon */
+/* menu list */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translatex(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
