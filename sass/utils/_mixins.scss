@@ -17,8 +17,8 @@
 @mixin heartIconGradient {
   background-image: linear-gradient(
     180deg,
-    $secondary-color 1%,
-    $primary-color 99%
+    $primary-color 1%,
+    $secondary-color 99%
   );
   color: transparent;
   -webkit-background-clip: text;
@@ -28,12 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin iconHover {
-  transition: all 1s ease-in-out;
-  font-weight: 900;
-  @include heartIconGradient;
 }
 
 @mixin shadowBox {
