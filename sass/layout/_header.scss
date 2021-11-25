@@ -6,14 +6,12 @@
   // padding: 20px;
   box-shadow: 0 1px 5px rgb(192, 192, 192);
   &__logo {
-    font-family: Shrikhand, sans-serif;
     text-align: center;
     width: 100%;
     padding: 0 0 10px;
     margin: 0 auto;
   }
   &__back-link a {
-    font-size: 1.3em;
     position: absolute;
     top: 37%;
     &:visited {

@@ -2,6 +2,7 @@
 .restaurants {
   width: 100%;
   background: $light-grey-color;
+  padding-bottom: 20px;
 }
 
 /* RESTAURANT CARD */
@@ -11,7 +12,7 @@
   margin-top: 20px;
   padding-bottom: 10px;
   width: 100%;
-  max-width: 599px;
+  // max-width: 599px;
   height: 257px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgb(211, 211, 211);

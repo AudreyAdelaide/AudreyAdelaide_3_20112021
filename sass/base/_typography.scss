@@ -8,6 +8,12 @@ body {
   font-size: 1.8em;
 }
 
+.header {
+  &__back-link a {
+    font-size: 1.3em;
+  }
+}
+
 .explorer {
   &__localisation {
     font-weight: 500;
@@ -21,6 +27,11 @@ body {
       font-weight: 100;
     }
   }
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .step {
@@ -44,12 +55,15 @@ body {
     font-size: 1.1em;
     line-height: 1.5em;
   }
+  &__position {
+    font-weight: 100;
+  }
   &__icon {
     font-size: 1.5em;
   }
 }
 
-.footer-logo {
+.footer__logo {
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }

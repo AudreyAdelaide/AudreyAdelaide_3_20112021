@@ -18,13 +18,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-a:visited {
-  color: #000;
-}
-
-.home-container {
-  background: #f1f1f1;
-}
 
 /*---------- [ Typography ] --------- */
 body {
@@ -36,6 +29,10 @@ body {
   font-size: 1.8em;
 }
 
+.header__back-link a {
+  font-size: 1.3em;
+}
+
 .explorer__localisation {
   font-weight: 500;
 }
@@ -45,6 +42,11 @@ body {
 .explorer__quote p {
   font-size: 1.1em;
   font-weight: 100;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .step__number {
@@ -65,13 +67,16 @@ body {
   font-size: 1.1em;
   line-height: 1.5em;
 }
+.restaurant__position {
+  font-weight: 100;
+}
 .restaurant__icon {
   font-size: 1.5em;
 }
 
-.footer-logo {
+.footer__logo {
   font-weight: 100;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 /*---------- [ LOADER ] --------- */
@@ -175,8 +180,6 @@ body {
 .btn {
   border-radius: 50px;
   padding: 15px 21px;
-  font-size: 1em;
-  font-weight: 500;
   color: #fff;
   border: none;
   box-shadow: 0 5px 7px #d4d4d4;
@@ -206,14 +209,12 @@ body {
   box-shadow: 0 1px 5px silver;
 }
 .header__logo {
-  font-family: Shrikhand, sans-serif;
   text-align: center;
   width: 100%;
   padding: 0 0 10px;
   margin: 0 auto;
 }
 .header__back-link a {
-  font-size: 1.3em;
   position: absolute;
   top: 37%;
 }
@@ -266,17 +267,17 @@ body {
 /*---- STEP COMMAND ----*/
 .step {
   width: 100%;
-  height: 70px;
+  height: 75px;
   margin: 20px 0 7px 10px;
   display: flex;
   align-items: center;
   background: #f6f6f6;
-  box-shadow: 0 5px 9px #d4d4d4;
+  box-shadow: 0 3px 15px #d6d6d6;
   border-radius: 20px;
   transition: 0.3s;
 }
 .step:hover {
-  background: #f2eafb;
+  background: #f4eefc;
 }
 .step:hover .step__icon {
   color: #9356dc;
@@ -302,6 +303,7 @@ body {
 .restaurants {
   width: 100%;
   background: #f6f6f6;
+  padding-bottom: 20px;
 }
 
 /* RESTAURANT CARD */
@@ -311,7 +313,6 @@ body {
   margin-top: 20px;
   padding-bottom: 10px;
   width: 100%;
-  max-width: 599px;
   height: 257px;
   border-radius: 15px;
   box-shadow: 0 5px 15px lightgray;
@@ -357,20 +358,38 @@ body {
 }
 
 /*---------- [ FOOTER ] --------- */
-.footer-container {
-  background: #292929;
+.footer {
+  background: #353535;
   color: #fff;
-  padding: 30px;
 }
-.footer-container__title {
-  margin-bottom: 20px;
+.footer__wrap {
+  padding: 20px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
-.footer-container li {
+.footer__logo {
+  margin-bottom: 15px;
+}
+.footer__list {
   line-height: 1.7em;
 }
-.footer-container a {
+.footer__link {
   color: #fff;
   font-weight: 100;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  width: 10px;
+  margin-right: 15px;
+}
+.footer .fa-utensils {
+  font-size: 0.8em;
+}
+.footer .fa-hands-helping {
+  font-size: 0.7em;
 }
 
 /*# sourceMappingURL=style.css.map */

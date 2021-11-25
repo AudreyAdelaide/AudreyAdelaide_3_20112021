@@ -2,13 +2,10 @@
 .btn {
   border-radius: 50px;
   padding: 15px 21px;
-  font-size: 1em;
-  font-weight: 500;
   color: #fff;
   border: none;
   @include shadowBox;
   @include linearGradient;
-
   transition: 0.1s;
   &:hover {
     @include linearGradientLightness;

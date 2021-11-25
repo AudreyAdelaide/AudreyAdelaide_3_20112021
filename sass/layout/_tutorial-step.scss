@@ -14,16 +14,16 @@
 /*---- STEP COMMAND ----*/
 .step {
   width: 100%;
-  height: 70px;
+  height: 75px;
   margin: 20px 0 7px 10px;
   display: flex;
   align-items: center;
   background: $light-grey-color;
-  box-shadow: 0 5px 9px rgb(212, 212, 212);
+  box-shadow: 0 3px 15px rgb(214, 214, 214);
   border-radius: 20px;
   transition: 0.3s;
   &:hover {
-    background: lighten(#9356dc, 35%);
+    background: lighten(#9356dc, 36%);
     .step__icon {
       color: $primary-color;
     }
