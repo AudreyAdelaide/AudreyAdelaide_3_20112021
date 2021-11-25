@@ -1,0 +1,69 @@
+/*---------- [ Typography ] --------- */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8em;
+}
+
+.header {
+  &__back-link a {
+    font-size: 1.3em;
+  }
+}
+
+.explorer {
+  &__localisation {
+    font-weight: 500;
+  }
+  &__quote {
+    & h1 {
+      font-size: 1.6em;
+    }
+    & p {
+      font-size: 1.1em;
+      font-weight: 100;
+    }
+  }
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.step {
+  &__number {
+    font-size: 0.9em;
+  }
+  &__icon {
+    font-size: 1.2em;
+  }
+  &__text {
+    font-weight: 500;
+  }
+}
+
+.restaurant {
+  &__new-feature {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  &__infos {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  &__position {
+    font-weight: 100;
+  }
+  &__icon {
+    font-size: 1.5em;
+  }
+}
+
+.footer__logo {
+  font-weight: 100;
+  font-size: 1.2em;
+}

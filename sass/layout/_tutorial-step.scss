@@ -1,0 +1,45 @@
+/*--------- [ SECTION TUTORIAL ]-----------*/
+.tutorial {
+  width: 100%;
+  &__steps {
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+/*---- STEP COMMAND ----*/
+.step {
+  width: 100%;
+  height: 75px;
+  margin: 20px 0 7px 10px;
+  display: flex;
+  align-items: center;
+  background: $light-grey-color;
+  box-shadow: 0 3px 15px rgb(214, 214, 214);
+  border-radius: 20px;
+  transition: 0.3s;
+  &:hover {
+    background: lighten(#9356dc, 36%);
+    .step__icon {
+      color: $primary-color;
+    }
+  }
+  &__number {
+    background: $primary-color;
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%;
+    @include flexCenter;
+    margin-left: -12px;
+    margin-right: 20px;
+  }
+  &__icon {
+    margin-right: 20px;
+    color: $icon-grey-color;
+  }
+}

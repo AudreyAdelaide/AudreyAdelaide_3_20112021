@@ -2,15 +2,16 @@
 @import "./utils/mixins";
 
 @import "./base/base";
+@import "./base/typography";
 
 @import "./components/loader";
 @import "./components/animations";
 @import "./components/buttons";
-@import "./components/cards";
+
+@import "./pages/containers";
 
 @import "./layout/header";
-@import "./layout/call-to-action";
-@import "./layout/home-container";
-@import "./layout/command-steps";
-@import "./layout/home-restaurants";
+@import "./layout/explorer";
+@import "./layout/tutorial-step";
+@import "./layout/restaurants";
 @import "./layout/footer";
