@@ -1,3 +1,4 @@
+/*---------- [ Typography ] --------- */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -31,6 +32,20 @@ body {
   }
   &__text {
     font-weight: 500;
+  }
+}
+
+.restaurant {
+  &__new-feature {
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  &__infos {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  &__icon {
+    font-size: 1.5em;
   }
 }
 

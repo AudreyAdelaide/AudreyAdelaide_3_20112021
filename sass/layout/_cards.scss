@@ -11,12 +11,10 @@
   box-shadow: 0 5px 15px rgb(211, 211, 211);
   &__new-feature {
     position: absolute;
-    font-size: 0.9em;
     right: 10px;
     top: 15px;
     padding: 6px 13px;
     color: darken($tertiary-color, 40%);
-    font-weight: 600;
     background: $tertiary-color;
     border-radius: 2px;
   }
@@ -28,8 +26,6 @@
   }
   &__infos {
     padding: 15px;
-    font-size: 1.1em;
-    line-height: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -38,7 +34,6 @@
     display: none;
   }
   &__icon {
-    font-size: 1.5em;
     margin: 5px 10px 0 0;
     &:hover {
       color: #f6f6f6;

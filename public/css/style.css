@@ -26,6 +26,7 @@ a:visited {
   background: #f1f1f1;
 }
 
+/*---------- [ Typography ] --------- */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -54,6 +55,18 @@ body {
 }
 .step__text {
   font-weight: 500;
+}
+
+.restaurant__new-feature {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.restaurant__infos {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.restaurant__icon {
+  font-size: 1.5em;
 }
 
 .footer-logo {
@@ -297,12 +310,10 @@ body {
 }
 .restaurant__new-feature {
   position: absolute;
-  font-size: 0.9em;
   right: 10px;
   top: 15px;
   padding: 6px 13px;
   color: #278870;
-  font-weight: 600;
   background: #99e2d0;
   border-radius: 2px;
 }
@@ -314,8 +325,6 @@ body {
 }
 .restaurant__infos {
   padding: 15px;
-  font-size: 1.1em;
-  line-height: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -324,7 +333,6 @@ body {
   display: none;
 }
 .restaurant__icon {
-  font-size: 1.5em;
   margin: 5px 10px 0 0;
 }
 .restaurant__icon:hover {
