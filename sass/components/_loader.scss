@@ -9,13 +9,18 @@
   z-index: 1000;
   visibility: visible;
   opacity: 100%;
-  animation: load 0s 3s forwards;
+  animation: load 0s 2.5s forwards;
+  overflow: hidden;
+  &--position {
+    position: fixed;
+  }
   &__container {
     display: inline-block;
     position: relative;
     width: 100px;
     height: 20px;
-    top: 50vh;
+    top: 45vh;
+    right: 2vh;
   }
   &__dot {
     position: absolute;

@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+body {
+  position: relative;
+}
+
 .home {
   overflow: hidden;
   animation: afterLoad 0s ease-in-out 2.5s forwards;
@@ -97,14 +101,19 @@ h2 {
   z-index: 1000;
   visibility: visible;
   opacity: 100%;
-  animation: load 0s 3s forwards;
+  animation: load 0s 2.5s forwards;
+  overflow: hidden;
+}
+.loader--position {
+  position: fixed;
 }
 .loader__container {
   display: inline-block;
   position: relative;
   width: 100px;
   height: 20px;
-  top: 50vh;
+  top: 45vh;
+  right: 2vh;
 }
 .loader__dot {
   position: absolute;
