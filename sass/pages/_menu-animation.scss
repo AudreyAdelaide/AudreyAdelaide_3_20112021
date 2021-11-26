@@ -1,3 +1,9 @@
+//Loop test for animmation
+
+// $menu-fadein: ;
+
+//End test
+
 .menu-list--fadeIn {
   hr {
     opacity: 0;
@@ -21,6 +27,11 @@
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 0.9s;
+  }
+  .menu-card__link--delay4 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
   }
 }
 

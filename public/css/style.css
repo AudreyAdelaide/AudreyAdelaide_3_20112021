@@ -5,9 +5,9 @@
   padding: 0;
 }
 
-body {
+.home {
   overflow: hidden;
-  animation: afterLoad 0s ease-in-out 3s forwards;
+  animation: afterLoad 0s ease-in-out 2.5s forwards;
 }
 
 li {
@@ -286,6 +286,11 @@ h2 {
   opacity: 0;
   animation: fadeIn 1s forwards;
   animation-delay: 0.9s;
+}
+.menu-list--fadeIn .menu-card__link--delay4 {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 }
 
 .menu-list--fadeIn2 hr {
