@@ -270,6 +270,7 @@ h2 {
 }
 .menu__btn {
   width: 180px;
+  margin: 20px 0 40px;
 }
 
 .menu-list--fadeIn hr {
