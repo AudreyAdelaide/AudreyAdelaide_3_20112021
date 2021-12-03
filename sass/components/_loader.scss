@@ -34,19 +34,19 @@
       animation: loader1 0.6s infinite;
     }
     &:nth-child(2) {
-      @include linearGradient;
+      @include btnGradient;
       z-index: 100;
       left: 15px;
       animation: loader2 0.6s infinite;
     }
     &:nth-child(3) {
-      @include linearGradient;
+      @include btnGradient;
       z-index: 100;
       left: 45px;
       animation: loader2 0.6s infinite;
     }
     &:nth-child(4) {
-      @include linearGradient;
+      @include btnGradient;
       z-index: 100;
       left: 75px;
       animation: loader2 0.6s infinite;

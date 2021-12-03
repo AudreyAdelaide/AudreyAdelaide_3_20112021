@@ -36,7 +36,7 @@ h2 {
 
 .logo {
   font-family: "Shrikhand", cursive;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 500;
 }
 
@@ -45,7 +45,9 @@ h2 {
 }
 
 .explorer__localisation {
+  font-size: 1em;
   font-weight: 500;
+  color: #353535;
 }
 .explorer__quote h1 {
   font-size: 1.6em;
@@ -57,7 +59,6 @@ h2 {
 
 .btn {
   font-size: 1em;
-  font-weight: 500;
 }
 
 .step__number {
@@ -67,6 +68,7 @@ h2 {
   font-size: 1.2em;
 }
 .step__text {
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -87,7 +89,7 @@ h2 {
 
 .footer__logo {
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /*---------- [ LOADER ] --------- */
@@ -191,6 +193,23 @@ h2 {
     transform: translate(24px, 0);
   }
 }
+/* Animation heart cards */
+@keyframes gradientPosition {
+  0% {
+    background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0% 0%;
+    background-position: bottom;
+  }
+  100% {
+    background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+    background-position: bottom;
+  }
+}
 /* menu list */
 @keyframes fadeIn {
   0% {
@@ -215,16 +234,17 @@ h2 {
 /*---------- [ BUTTONS ] --------- */
 .btn {
   border-radius: 50px;
-  padding: 15px 21px;
+  padding: 16px 22px;
   color: #fff;
   border: none;
   box-shadow: 0 5px 7px #d4d4d4;
   background-image: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
   transition: 0.1s;
+  cursor: pointer;
 }
 .btn:hover {
   background-image: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
-  box-shadow: 0 2px 10px #707070;
+  box-shadow: 0 5px 12px #adadad;
 }
 
 .container {
@@ -248,12 +268,12 @@ h2 {
 }
 
 .menu {
-  margin-top: -70px;
+  margin-top: -50px;
   position: relative;
 }
 .menu .wrapper--menu {
-  border-radius: 50px 50px 0 0;
-  padding-top: 40px;
+  border-radius: 40px 40px 0 0;
+  padding: 25px 10px;
   background: #f6f6f6;
   overflow: hidden;
 }
@@ -262,14 +282,33 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
-.menu__like {
+.menu__title {
   font-size: 1.7em;
+}
+.menu .like-fas {
+  display: none;
+}
+.menu__like-icon {
+  font-size: 1.6em;
+  margin: 20px;
+}
+.menu__like-icon:hover {
+  color: transparent;
+}
+.menu__like-icon:hover .like-fas {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  animation: gradientPosition 370ms forwards;
+}
+.menu__like-icon:hover .like-far {
+  display: none;
 }
 .menu__order-btn {
   text-align: center;
 }
 .menu__btn {
-  width: 180px;
+  width: 190px;
   margin: 20px 0 40px;
 }
 
@@ -381,18 +420,28 @@ h2 {
 }
 .menu-card__infos {
   height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  width: 90%;
+  padding: 15px 7px 15px 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.5em;
 }
 .menu-card__title {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-card__description {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 100;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu-card .right-wrap {
   display: flex;
@@ -400,8 +449,9 @@ h2 {
   height: 100%;
 }
 .menu-card__price {
-  margin: 0 20px 10px;
+  margin: 0 20px 10px 5px;
   font-weight: 500;
+  font-size: 0.95em;
 }
 .menu-card__check-icon {
   background: #99e2d0;
@@ -415,20 +465,17 @@ h2 {
   transition: 0.4s;
 }
 .menu-card__check-icon .fa-check {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #99e2d0;
   background: #fff;
   border-radius: 100%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: rotate(360deg);
   transition: 0.4s;
-}
-.menu-card:hover .menu-card__price {
-  margin-left: 0;
 }
 .menu-card:hover .menu-card__check-icon {
   margin-right: 0;
@@ -468,7 +515,7 @@ h2 {
 .explorer {
   background: #f6f6f6;
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 }
 .explorer__localisation {
   height: 50px;
@@ -477,11 +524,17 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.explorer__localisation p {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
 .explorer__localisation .fas {
-  margin-right: 20px;
+  margin: 17px;
 }
 .explorer__quote {
-  padding: 35px;
+  padding: 36px 35px 30px;
 }
 .explorer__quote h1 {
   margin-bottom: 12px;
@@ -490,6 +543,9 @@ h2 {
 /*--------- [ SECTION TUTORIAL ]-----------*/
 .tutorial {
   width: 100%;
+}
+.tutorial__title {
+  font-size: 1.5em;
 }
 .tutorial__steps {
   width: 100%;
@@ -505,7 +561,7 @@ h2 {
 .step {
   width: 100%;
   height: 75px;
-  margin: 20px 0 7px 10px;
+  margin: 20px 0 7px 11px;
   display: flex;
   align-items: center;
   background: #f6f6f6;
@@ -522,16 +578,18 @@ h2 {
 .step__number {
   background: #9356dc;
   color: #fff;
-  width: 23px;
-  height: 23px;
+  width: 26px;
+  height: 26px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -12px;
+  margin-left: -11px;
   margin-right: 20px;
 }
 .step__icon {
+  display: block;
+  width: 22px;
   margin-right: 20px;
   color: #7e7e7e;
 }
@@ -553,6 +611,10 @@ h2 {
   height: 257px;
   border-radius: 15px;
   box-shadow: 0 5px 15px lightgray;
+  transition: box-shadow 0.2s;
+}
+.restaurant:hover {
+  box-shadow: 0 5px 12px #adadad;
 }
 .restaurant__new-feature {
   position: absolute;
@@ -575,23 +637,22 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
 }
-.restaurant .fas {
-  display: none;
-}
 .restaurant__icon {
+  display: inline-block;
   margin: 5px 10px 0 0;
 }
-.restaurant__icon:hover {
-  color: #f6f6f6;
-}
 .restaurant__icon:hover .like-fas {
-  background-image: linear-gradient(180deg, #9356dc 1%, #ff79da 99%);
-  color: transparent;
-  -webkit-background-clip: text;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  animation: gradientPosition 370ms forwards;
 }
 .restaurant__icon:hover .like-far {
   display: none;
+}
+.restaurant .fas {
+  display: none;
+  color: #f6f6f6;
 }
 
 /*---------- [ FOOTER ] --------- */

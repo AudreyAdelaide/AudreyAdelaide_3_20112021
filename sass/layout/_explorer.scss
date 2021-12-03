@@ -2,19 +2,31 @@
 .explorer {
   background: $light-grey-color;
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
   &__localisation {
     height: 50px;
     background: $medium-grey-color;
     @include flexCenter;
+    & p {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      text-align: left;
+    }
     & .fas {
-      margin-right: 20px;
+      margin: 17px;
     }
   }
   &__quote {
-    padding: 35px;
+    padding: 36px 35px 30px;
     & h1 {
       margin-bottom: 12px;
     }
+  }
+}
+
+.localisation {
+  &__text {
+    // margin-left: 15px;
   }
 }

@@ -11,7 +11,7 @@ h2 {
 
 .logo {
   font-family: "Shrikhand", cursive;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 500;
 }
 
@@ -23,7 +23,9 @@ h2 {
 
 .explorer {
   &__localisation {
+    font-size: 1em;
     font-weight: 500;
+    color: #353535;
   }
   &__quote {
     & h1 {
@@ -38,7 +40,6 @@ h2 {
 
 .btn {
   font-size: 1em;
-  font-weight: 500;
 }
 
 .step {
@@ -49,6 +50,7 @@ h2 {
     font-size: 1.2em;
   }
   &__text {
+    font-size: 1em;
     font-weight: 500;
   }
 }
@@ -72,5 +74,5 @@ h2 {
 
 .footer__logo {
   font-weight: 100;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
