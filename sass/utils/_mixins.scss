@@ -54,11 +54,6 @@
   white-space: nowrap;
 }
 
-@mixin fade-in-animation {
-  opacity: 0;
-  animation: fade-in 1s forwards;
-}
-
 // Mixin Breakpoints
 
 @mixin desktop {

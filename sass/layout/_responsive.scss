@@ -1,4 +1,4 @@
-/* Responsive Tutorial */
+/* ---- [ Responsive Tutorial ] ---- */
 .tutorial__steps {
   @include desktop {
     display: flex;
@@ -15,7 +15,7 @@
   }
 }
 
-/* Responsive Restaurants */
+/* ---- [ Responsive Restaurants ] ----*/
 .restaurants__cards {
   @include desktop {
     display: flex;
@@ -30,7 +30,7 @@
   }
 }
 
-/* Responsive restaurant page */
+/* ---- [ Responsive restaurant page ] ---- */
 .menu-cards {
   @include desktop {
     display: flex;

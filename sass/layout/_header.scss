@@ -14,13 +14,13 @@
     position: absolute;
     top: 35%;
     left: 20px;
+    transition: transform 0.3s;
     &:visited {
       text-decoration: none;
       color: #000;
     }
     &:hover {
-      transform: scale(1.5);
-      transition: transform 0.3s ease;
+      transform: scale(1.3);
     }
   }
 }

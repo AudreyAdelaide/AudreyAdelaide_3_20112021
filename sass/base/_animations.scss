@@ -52,21 +52,19 @@
 }
 
 /* ----------[ menu list ]------------- */
+
+@for $i from 1 to 5 {
+  .menu-card__link:nth-of-type(#{$i}) {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: $i * 250ms;
+  }
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateY(30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-200%);
   }
   100% {
     opacity: 1;
