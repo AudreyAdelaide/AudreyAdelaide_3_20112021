@@ -1,9 +1,9 @@
 .hero {
-  width: 100%;
+  width: $full-width;
   height: 270px;
   &__background {
     object-fit: cover;
-    width: 100%;
+    width: $full-width;
     height: 100%;
   }
 }

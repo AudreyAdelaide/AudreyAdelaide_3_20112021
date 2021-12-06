@@ -62,7 +62,7 @@ h2 {
 }
 
 .step__number {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 .step__icon {
   font-size: 1.2em;
@@ -73,7 +73,7 @@ h2 {
 }
 
 .restaurant__new-feature {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600;
 }
 .restaurant__infos {
@@ -92,6 +92,74 @@ h2 {
   font-size: 1.1em;
 }
 
+/* --------- [ Loader animation ]---------- */
+/* -> Unlock scroll */
+@keyframes afterLoad {
+  to {
+    overflow: visible;
+  }
+}
+/* -> Hide loader */
+@keyframes load {
+  to {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* -> Dot animation loader */
+@keyframes loader1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+/* ----------[ Home like hover ]------------- */
+@keyframes background-position {
+  to {
+    background-size: 200% 100%;
+  }
+}
+/* ----------[ menu list ]------------- */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 /*---------- [ LOADER ] --------- */
 .loader {
   display: inline-block;
@@ -129,19 +197,19 @@ h2 {
   animation: loader1 0.6s infinite;
 }
 .loader__dot:nth-child(2) {
-  background-image: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  background-image: linear-gradient(175deg, #ff79da 1%, #9356dc 99%);
   z-index: 100;
   left: 15px;
   animation: loader2 0.6s infinite;
 }
 .loader__dot:nth-child(3) {
-  background-image: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  background-image: linear-gradient(175deg, #ff79da 1%, #9356dc 99%);
   z-index: 100;
   left: 45px;
   animation: loader2 0.6s infinite;
 }
 .loader__dot:nth-child(4) {
-  background-image: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  background-image: linear-gradient(175deg, #ff79da 1%, #9356dc 99%);
   z-index: 100;
   left: 75px;
   animation: loader2 0.6s infinite;
@@ -153,84 +221,6 @@ h2 {
   animation: loader3 0.6s infinite;
 }
 
-/* Unlock scroll */
-@keyframes afterLoad {
-  to {
-    overflow: visible;
-  }
-}
-/* Hide loader */
-@keyframes load {
-  to {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-/* Dot animation loader */
-@keyframes loader1 {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes loader3 {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-@keyframes loader2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
-/* Animation heart cards */
-@keyframes gradientPosition {
-  0% {
-    background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-size: 0% 0%;
-    background-position: bottom;
-  }
-  100% {
-    background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-size: 200% 100%;
-    background-position: bottom;
-  }
-}
-/* menu list */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(30%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translatex(-200%);
-  }
-  100% {
-    opacity: 1;
-    transform: translatex(0);
-  }
-}
 /*---------- [ BUTTONS ] --------- */
 .btn {
   border-radius: 50px;
@@ -238,12 +228,12 @@ h2 {
   color: #fff;
   border: none;
   box-shadow: 0 5px 7px #d4d4d4;
-  background-image: linear-gradient(175deg, #ff79da 0%, #9356dc 100%);
+  background-image: linear-gradient(175deg, #ff79da 1%, #9356dc 99%);
   transition: 0.1s;
   cursor: pointer;
 }
 .btn:hover {
-  background-image: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+  background-image: linear-gradient(175deg, #ff93e1 1%, #a16be0 99%);
   box-shadow: 0 5px 12px #adadad;
 }
 
@@ -297,9 +287,13 @@ h2 {
 }
 .menu__like-icon:hover .like-fas {
   display: inline-block;
+  background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
+  color: transparent;
+  -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-position: bottom;
-  animation: gradientPosition 370ms forwards;
+  background-size: 0% 0%;
+  animation: background-position 370ms forwards;
 }
 .menu__like-icon:hover .like-far {
   display: none;
@@ -318,52 +312,52 @@ h2 {
 }
 .menu-list--fadeIn .menu-cards__title {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
 }
 .menu-list--fadeIn .menu-card__link--delay1 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 0.3s;
 }
 .menu-list--fadeIn .menu-card__link--delay2 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 0.6s;
 }
 .menu-list--fadeIn .menu-card__link--delay3 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 0.9s;
 }
 .menu-list--fadeIn .menu-card__link--delay4 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 1s;
 }
 
 .menu-list--fadeIn2 hr {
   opacity: 0;
-  animation: slideIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 1.2s;
 }
 .menu-list--fadeIn2 .menu-cards__title {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 1.2s;
 }
 .menu-list--fadeIn2 .menu-card__link--delay1 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 1.5s;
 }
 .menu-list--fadeIn2 .menu-card__link--delay2 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 1.8s;
 }
 .menu-list--fadeIn2 .menu-card__link--delay3 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 2.1s;
 }
 
@@ -374,22 +368,22 @@ h2 {
 }
 .menu-list--fadeIn3 .menu-cards__title {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 2.4s;
 }
 .menu-list--fadeIn3 .menu-card__link--delay1 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 2.7s;
 }
 .menu-list--fadeIn3 .menu-card__link--delay2 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 3s;
 }
 .menu-list--fadeIn3 .menu-card__link--delay3 {
   opacity: 0;
-  animation: fadeIn 1s forwards;
+  animation: fade-in 1s forwards;
   animation-delay: 3.3s;
 }
 
@@ -643,9 +637,13 @@ h2 {
 }
 .restaurant__icon:hover .like-fas {
   display: inline-block;
+  background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
+  color: transparent;
+  -webkit-background-clip: text;
   background-repeat: no-repeat;
   background-position: bottom;
-  animation: gradientPosition 370ms forwards;
+  background-size: 0% 0%;
+  animation: background-position 370ms forwards;
 }
 .restaurant__icon:hover .like-far {
   display: none;

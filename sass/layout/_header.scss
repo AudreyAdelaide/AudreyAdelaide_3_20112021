@@ -1,14 +1,14 @@
 /*--------[ HEADER ]---------*/
 .header {
   position: relative;
-  width: 100%;
+  width: $full-width;
   height: 63px;
   box-shadow: 0 1px 5px rgb(192, 192, 192);
   &__logo {
     text-align: center;
-    width: 100%;
+    width: $full-width;
     padding: 0 0 10px;
-    margin: 0 auto;
+    margin: $margin-center;
   }
   &__back-link a {
     position: absolute;

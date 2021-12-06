@@ -10,7 +10,7 @@
 
 .menu-list {
   display: inline-block;
-  width: 100%;
+  width: $full-width;
   margin: 15px 0;
 }
 
@@ -33,26 +33,16 @@
     overflow: hidden;
     white-space: nowrap;
     line-height: 1.5em;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: space-between;
-    // white-space: nowrap;
   }
   &__title {
     font-size: 1.2em;
     font-weight: 600;
-    text-overflow: ellipsis;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
+    @include ellipsis;
   }
   &__description {
     font-size: 1em;
     font-weight: 100;
-    text-overflow: ellipsis;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
+    @include ellipsis;
   }
   & .right-wrap {
     display: flex;
@@ -85,9 +75,6 @@
     }
   }
   &:hover {
-    // .menu-card__price {
-    //   margin-left: 0;
-    // }
     .menu-card__check-icon {
       margin-right: 0;
     }

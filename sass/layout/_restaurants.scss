@@ -11,7 +11,7 @@
   display: block;
   margin-top: 20px;
   padding-bottom: 10px;
-  width: 100%;
+  width: $full-width;
   height: 257px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgb(211, 211, 211);
@@ -43,14 +43,9 @@
   &__icon {
     display: inline-block;
     margin: 5px 10px 0 0;
-    // transition: 0.3s;
     &:hover {
-      // color: #f6f6f6;
       .like-fas {
-        display: inline-block;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        animation: gradientPosition 370ms forwards;
+        @include like-hover;
       }
       .like-far {
         display: none;
@@ -59,9 +54,6 @@
   }
   & .fas {
     display: none;
-    // height: 0;
     color: #f6f6f6;
-    // transform-origin: bottom;
-    // transform: translateY(100%);
   }
 }

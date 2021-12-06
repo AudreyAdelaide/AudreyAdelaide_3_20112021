@@ -1,11 +1,11 @@
 /*--------- [ SECTION TUTORIAL ]-----------*/
 .tutorial {
-  width: 100%;
+  width: $full-width;
   &__title {
     font-size: 1.5em;
   }
   &__steps {
-    width: 100%;
+    width: $full-width;
     padding: 0;
     margin-top: 5px;
     display: flex;
@@ -16,7 +16,7 @@
 }
 /*---- STEP COMMAND ----*/
 .step {
-  width: 100%;
+  width: $full-width;
   height: 75px;
   margin: 20px 0 7px 11px;
   display: flex;

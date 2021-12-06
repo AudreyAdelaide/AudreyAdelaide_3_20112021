@@ -10,7 +10,7 @@
     & p {
       display: block;
       width: 200px;
-      margin: 0 auto;
+      margin: $margin-center;
       text-align: left;
     }
     & .fas {
@@ -22,11 +22,5 @@
     & h1 {
       margin-bottom: 12px;
     }
-  }
-}
-
-.localisation {
-  &__text {
-    // margin-left: 15px;
   }
 }

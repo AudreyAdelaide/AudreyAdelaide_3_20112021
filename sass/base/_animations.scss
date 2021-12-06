@@ -1,11 +1,13 @@
-/* Unlock scroll */
+/* --------- [ Loader animation ]---------- */
+
+/* -> Unlock scroll */
 @keyframes afterLoad {
   to {
     overflow: visible;
   }
 }
 
-/* Hide loader */
+/* -> Hide loader */
 @keyframes load {
   to {
     width: 0;
@@ -15,7 +17,7 @@
   }
 }
 
-/* Dot animation loader */
+/* -> Dot animation loader */
 @keyframes loader1 {
   0% {
     transform: scale(0);
@@ -41,38 +43,16 @@
   }
 }
 
-/* Animation heart cards */
+/* ----------[ Home like hover ]------------- */
 
-@keyframes gradientPosition {
-  0% {
-    background-image: linear-gradient(
-      160deg,
-      $primary-color 1%,
-      $secondary-color 99%
-    );
-    color: transparent;
-    -webkit-background-clip: text;
-
-    background-size: 0% 0%;
-    background-position: bottom;
-  }
-  100% {
-    background-image: linear-gradient(
-      160deg,
-      $primary-color 1%,
-      $secondary-color 99%
-    );
-    color: transparent;
-    -webkit-background-clip: text;
-
+@keyframes background-position {
+  to {
     background-size: 200% 100%;
-    background-position: bottom;
   }
 }
 
-/* menu list */
-
-@keyframes fadeIn {
+/* ----------[ menu list ]------------- */
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateY(30%);
@@ -86,10 +66,10 @@
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translatex(-200%);
+    transform: translateX(-200%);
   }
   100% {
     opacity: 1;
-    transform: translatex(0);
+    transform: translateX(0);
   }
 }

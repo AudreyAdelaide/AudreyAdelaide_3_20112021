@@ -1,9 +1,9 @@
 .container {
-  width: 100%;
+  width: $full-width;
   & .wrapper {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: $max-width;
+    width: $full-width;
+    margin: $margin-center;
     padding: 50px 20px;
   }
 }
