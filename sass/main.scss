@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/maps";
 @import "./utils/mixins";
 
 @import "./base/base";
@@ -14,6 +15,7 @@
 @import "./pages/menu-animation";
 @import "./pages/menu-cards";
 
+@import "./layout/responsive";
 @import "./layout/header";
 @import "./layout/explorer";
 @import "./layout/tutorial-step";

@@ -1,0 +1,44 @@
+/* Responsive Tutorial */
+.tutorial__steps {
+  @include desktop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.step {
+  @include desktop {
+    margin-left: 20px;
+    // Obligée de mettre max-width afin que le changement
+    // de taille soit prit en compte
+    max-width: 30%;
+  }
+}
+
+/* Responsive Restaurants */
+.restaurants__cards {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.restaurant {
+  @include desktop {
+    max-width: 49%;
+  }
+}
+
+/* Responsive restaurant page */
+.menu-cards {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu-list {
+  @include desktop {
+    width: 32%;
+  }
+}

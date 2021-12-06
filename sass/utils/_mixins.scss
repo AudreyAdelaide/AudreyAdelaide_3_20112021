@@ -58,3 +58,11 @@
   opacity: 0;
   animation: fade-in 1s forwards;
 }
+
+// Mixin Breakpoints
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

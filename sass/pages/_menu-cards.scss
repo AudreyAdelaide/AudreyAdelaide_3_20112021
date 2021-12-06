@@ -6,12 +6,19 @@
     background: $tertiary-color;
     margin: 5px 0;
   }
+  // @media (min-width: 1000px) {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
 }
 
 .menu-list {
   display: inline-block;
   width: $full-width;
   margin: 15px 0;
+  // @media (min-width: 1000px) {
+  //   width: 30%;
+  // }
 }
 
 .menu-card {
@@ -24,7 +31,6 @@
   box-shadow: 0 3px 15px rgb(214, 214, 214);
   margin: 15px 0;
   overflow: hidden;
-
   &__infos {
     height: 100%;
     width: 90%;
