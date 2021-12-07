@@ -4,8 +4,7 @@
   "description": "AudreyAdelaide_3_20112021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
   },
   "repository": {
     "type": "git",
@@ -13,7 +12,6 @@
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/AudreyAdelaide/AudreyAdelaide_3_20112021/issues"
   },

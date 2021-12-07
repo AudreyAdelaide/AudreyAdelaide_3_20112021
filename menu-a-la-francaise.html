@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <h1 class="header__logo logo">ohmyfood</h1>
+        <img class="header__logo" src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         <div class="header__back-link">
             <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         </div>
@@ -33,250 +33,263 @@
             <div class="wrapper wrapper--menu">
                 <div class="menu__header">
                     <h1 class="menu__title logo">À la française</h1>
-                    <div class="menu__like-icon">
-                        <i class="menu__like like-far far fa-heart"></i>
-                        <i class="menu__like like-fas fas fa-heart"></i>
+                    <div class="like-btn">
+                        <span class="fa-stack">
+                            <i class="fas fa-heart fa-stack-1x"></i>
+                            <i class="far fa-heart fa-stack-1x"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="menu-cards">
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Entrées</h2>
+                            <hr>
+                        </div>
+                        <ul class="menu-list menu-list--fadeIn">
+                            <li class="menu-card__link menu-card__link--delay1">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Tartare de poulpe acidulé
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Aux zestes d'orange
+                                            </p>
+                                        </div>
 
-                    <ul class="menu-list menu-list--fadeIn">
-                        <h2 class="menu-cards__title">Entrées</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Tartare de poulpe acidulé
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Aux zestes d'orange
-                                        </p>
-                                    </div>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                25€
+                                            </p>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            25€
-                                        </p>
-
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Velouté de légumes d'antan
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Carotte, panais, topinambour
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay2">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Velouté de légumes d'antan
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Carotte, panais, topinambour
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            35€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                35€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Soupe à l'oignon
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Revisitée
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay3">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Soupe à l'oignon
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Revisitée
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            20€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                20€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul class="menu-list menu-list--fadeIn2">
-                        <h2 class="menu-cards__title">Plats</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Coquilles Saint-Jacques
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Accompagnées d'une purée de panais
-                                        </p>
-                                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Plats</h2>
+                            <hr>
+                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            40€
-                                        </p>
+                        <ul class="menu-list menu-list--fadeIn2">
+                            <li class="menu-card__link menu-card__link--delay1">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Coquilles Saint-Jacques
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Accompagnées d'une purée de panais
+                                            </p>
+                                        </div>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                40€
+                                            </p>
+
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Magret de canard
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et parmentier de pommes de terre
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay2">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Magret de canard
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et parmentier de pommes de terre
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            35€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                35€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Pigeonneau d’Ille-et-Vilaine
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Sur son lit de gnocchis aux légumes
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay3">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Pigeonneau d’Ille-et-Vilaine
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Sur son lit de gnocchis aux légumes
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            44€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                44€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Desserts</h2>
+                            <hr>
+                        </div>
+                        <ul class="menu-list menu-list--fadeIn3">
+                            <li class="menu-card__link menu-card__link--delay1">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Pétales de violettes glacés
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et purée de noisettes
+                                            </p>
+                                        </div>
 
-                    <ul class="menu-list menu-list--fadeIn3">
-                        <h2 class="menu-cards__title">Desserts</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Pétales de violettes glacés
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et purée de noisettes
-                                        </p>
-                                    </div>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                18€
+                                            </p>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            18€
-                                        </p>
-
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Fondant au chocolat
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Revisité
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay2">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Fondant au chocolat
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Revisité
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            22€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                22€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Millefeuille croustillant
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Myrtilles et pâte d’amande
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link menu-card__link--delay3">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Millefeuille croustillant
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Myrtilles et pâte d’amande
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            23€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                23€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="menu__order-btn">

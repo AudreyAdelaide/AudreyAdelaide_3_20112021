@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <h1 class="header__logo logo">ohmyfood</h1>
+        <img class="header__logo" src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
         <div class="header__back-link">
             <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         </div>
@@ -34,252 +34,266 @@
             <div class="wrapper wrapper--menu">
                 <div class="menu__header">
                     <h1 class="menu__title logo">Le délice des sens</h1>
-                    <div class="menu__like-icon">
-                        <i class="menu__like like-far far fa-heart"></i>
-                        <i class="menu__like like-fas fas fa-heart"></i>
+                    <div class="like-btn">
+                        <span class="fa-stack">
+                            <i class="fas fa-heart fa-stack-1x"></i>
+                            <i class="far fa-heart fa-stack-1x"></i>
+                        </span>
                     </div>
                 </div>
 
                 <div class="menu-cards">
 
-                    <ul class="menu-list menu-list--fadeIn">
-                        <h2 class="menu-cards__title">Entrées</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Tartare de thon
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Assaisonné au yuzu
-                                        </p>
-                                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Entrées</h2>
+                            <hr>
+                        </div>
+                        <ul class="menu-list">
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            25€
-                                        </p>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Tartare de thon
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Assaisonné au yuzu
+                                            </p>
+                                        </div>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                25€
+                                            </p>
+
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Bouchée de homard croustillant
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et sa farandole de petits légumes
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Bouchée de homard croustillant
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et sa farandole de petits légumes
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            35€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                35€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Velouté de cèpes
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Aux truffes
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Velouté de cèpes
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Aux truffes
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            20€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                20€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul class="menu-list menu-list--fadeIn2">
-                        <h2 class="menu-cards__title">Plats</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Poulet rôti aux herbes de Provence
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et sa crème de truffe
-                                        </p>
-                                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Plats</h2>
+                            <hr>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Poulet rôti aux herbes de Provence
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et sa crème de truffe
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            40€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                40€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Langouste rôtie
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et ses légumes de saison
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Langouste rôtie
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et ses légumes de saison
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            35€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                35€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Côte de boeuf Angus
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Et sa purée de panais
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Côte de boeuf Angus
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Et sa purée de panais
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            44€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                44€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <ul class="menu-list menu-list--fadeIn3">
-                        <h2 class="menu-cards__title">Desserts</h2>
-                        <hr>
-                        <li class="menu-card__link menu-card__link--delay1">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Farandole de desserts
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Du chef
-                                        </p>
-                                    </div>
+                    <div class="menu__item">
+                        <div class="menu__item menu__item--header">
+                            <h2 class="menu-cards__title">Desserts</h2>
+                            <hr>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Farandole de desserts
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Du chef
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            18€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                18€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay2">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Crème brulée
-                                        </p>
-                                        <p class="menu-card__description">
-                                            Revisitée
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Crème brulée
+                                            </p>
+                                            <p class="menu-card__description">
+                                                Revisitée
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            22€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                22€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
+                                </a>
+                            </li>
 
-                        <li class="menu-card__link menu-card__link--delay3">
-                            <a href="#">
-                                <div class="menu-card">
-                                    <div class="menu-card__infos">
-                                        <p class="menu-card__title">
-                                            Tiramisu
-                                        </p>
-                                        <p class="menu-card__description">
-                                            À la noisette
-                                        </p>
-                                    </div>
+                            <li class="menu-card__link">
+                                <a href="#">
+                                    <div class="menu-card">
+                                        <div class="menu-card__infos">
+                                            <p class="menu-card__title">
+                                                Tiramisu
+                                            </p>
+                                            <p class="menu-card__description">
+                                                À la noisette
+                                            </p>
+                                        </div>
 
-                                    <div class="right-wrap">
-                                        <p class="menu-card__price">
-                                            23€
-                                        </p>
+                                        <div class="right-wrap">
+                                            <p class="menu-card__price">
+                                                23€
+                                            </p>
 
-                                        <div class="menu-card__check-icon">
-                                            <i class="fas fa-check"></i>
+                                            <div class="menu-card__check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
                 <div class="menu__order-btn">
                     <button class="menu__btn btn">
                         Commander

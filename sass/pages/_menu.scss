@@ -3,7 +3,7 @@
   position: relative;
   .wrapper--menu {
     border-radius: 40px 40px 0 0;
-    padding: 25px 10px;
+    padding: 25px 15px;
     background: $light-grey-color;
     overflow: hidden;
   }
@@ -12,24 +12,23 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__item {
+    width: $full-width;
+    margin-top: 20px;
+    &--header {
+      margin-left: 1%;
+    }
+    & hr {
+      width: 40px;
+      height: 3px;
+      border: none;
+      background: $tertiary-color;
+      margin-top: 7px;
+    }
+  }
   &__title {
     font-size: 1.7em;
-  }
-  & .like-fas {
-    display: none;
-  }
-  &__like-icon {
-    font-size: 1.6em;
-    margin: 20px;
-    &:hover {
-      color: transparent;
-      .like-fas {
-        @include like-hover;
-      }
-      .like-far {
-        display: none;
-      }
-    }
+    margin-left: 1%;
   }
   &__order-btn {
     text-align: center;

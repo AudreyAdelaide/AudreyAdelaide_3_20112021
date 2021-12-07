@@ -3,10 +3,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+
 h2 {
   font-size: 1em;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .logo {
@@ -28,8 +33,9 @@ h2 {
     color: #353535;
   }
   &__quote {
-    & h1 {
+    & h2 {
       font-size: 1.6em;
+      font-weight: 600;
     }
     & p {
       font-size: 1.1em;
@@ -55,6 +61,12 @@ h2 {
   }
 }
 
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
 .restaurant {
   &__new-feature {
     font-size: 1em;
@@ -75,4 +87,10 @@ h2 {
 .footer__logo {
   font-weight: 100;
   font-size: 1.1em;
+}
+
+.menu-cards__title {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
 }

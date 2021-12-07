@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 0% 0%;
-  animation: background-position 370ms forwards;
+  animation: background-position 700ms forwards;
 }
 
 @mixin flexCenter {
@@ -60,4 +60,8 @@
   @media screen and (min-width: map-get($breakpoints, desktop)) {
     @content;
   }
+}
+
+@mixin margin-center {
+  margin: 0 auto;
 }

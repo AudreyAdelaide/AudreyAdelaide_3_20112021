@@ -1,0 +1,22 @@
+.like-btn {
+  font-size: 1.6em;
+  margin: 20px;
+  .fa-stack {
+    width: 30px;
+    height: 30px;
+    line-height: unset;
+  }
+  & .fas {
+    @include heart-gradient;
+    display: none;
+  }
+  &:hover {
+    .fas {
+      @include like-hover;
+    }
+    .far {
+      transition: 0.3s;
+      @include heart-gradient;
+    }
+  }
+}

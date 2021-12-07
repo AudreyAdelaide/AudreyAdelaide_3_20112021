@@ -40,17 +40,9 @@
     justify-content: space-between;
     align-items: flex-start;
   }
-  &__icon {
+  & .like-btn {
     display: inline-block;
     margin: 5px 10px 0 0;
-    &:hover {
-      .like-fas {
-        @include like-hover;
-      }
-      .like-far {
-        display: none;
-      }
-    }
   }
   & .fas {
     display: none;

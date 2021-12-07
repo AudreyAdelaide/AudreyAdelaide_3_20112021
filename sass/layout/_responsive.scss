@@ -39,6 +39,13 @@
 }
 .menu-list {
   @include desktop {
-    width: 32%;
+    width: 96%;
+    max-width: 400px;
+  }
+}
+
+.menu__item {
+  @include desktop {
+    justify-content: space-between;
   }
 }
