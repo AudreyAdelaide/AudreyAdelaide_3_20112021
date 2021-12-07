@@ -10,7 +10,7 @@ body {
 }
 
 .home {
-  overflow: hidden;
+  overflow-y: hidden;
   animation: afterLoad 0s ease-in-out 2.5s forwards;
 }
 
@@ -467,7 +467,7 @@ h2 {
 .header__logo {
   text-align: center;
   width: 100%;
-  padding: 0 0 10px;
+  padding: 10px 0;
   margin: 0 auto;
 }
 .header__back-link a {
