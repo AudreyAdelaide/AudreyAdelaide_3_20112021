@@ -8,16 +8,18 @@
 
 @import "./components/loader";
 @import "./components/buttons";
-@import "./components/like-button";
+// @import "./components/like-button";
 
-@import "./pages/containers";
+@import "./pages/home";
 @import "./pages/hero";
 @import "./pages/menu";
 @import "./pages/menu-cards";
 
+@import "./layout/containers";
 @import "./layout/responsive";
 @import "./layout/header";
 @import "./layout/explorer";
 @import "./layout/tutorial-step";
-@import "./layout/restaurants";
+@import "./layout/home-cards";
+// @import "./layout/restaurants";
 @import "./layout/footer";

@@ -10,8 +10,6 @@
   &__logo {
     text-align: center;
     width: 165px;
-    // padding: 10px 0;
-    // margin: $margin-center;
     @include margin-center;
   }
   &__back-link {

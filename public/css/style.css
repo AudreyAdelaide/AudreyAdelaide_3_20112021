@@ -45,8 +45,19 @@ h2 {
   font-weight: 500;
 }
 
-.header__back-link a {
-  font-size: 1.3em;
+.btn {
+  font-size: 1em;
+}
+
+.like-btn {
+  font-size: 1.6em;
+}
+.like-btn .fa-stack {
+  line-height: unset;
+}
+
+.header .fa-lg {
+  line-height: unset;
 }
 
 .explorer__localisation {
@@ -63,18 +74,13 @@ h2 {
   font-weight: 100;
 }
 
-.btn {
-  font-size: 1em;
-}
-
-.step__number {
+.step {
   font-size: 1em;
 }
 .step__icon {
   font-size: 1.2em;
 }
 .step__text {
-  font-size: 1em;
   font-weight: 500;
 }
 
@@ -99,15 +105,42 @@ h2 {
   font-size: 1.5em;
 }
 
-.footer__logo {
-  font-weight: 100;
-  font-size: 1.1em;
-}
-
 .menu-cards__title {
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.menu-card__title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.menu-card__infos {
+  line-height: 1.5em;
+}
+.menu-card__description {
+  font-size: 1em;
+  font-weight: 100;
+}
+.menu-card__price {
+  font-size: 0.9em;
+}
+.menu-card .fa-check {
+  font-size: 0.9em;
+}
+
+.footer__logo {
+  font-weight: 100;
+  font-size: 1.1em;
+}
+.footer__list {
+  line-height: 1.7em;
+}
+.footer .fa-utensils {
+  font-size: 0.8em;
+}
+.footer .fa-hands-helping {
+  font-size: 0.7em;
 }
 
 /* --------- [ Loader animation ]---------- */
@@ -269,14 +302,13 @@ h2 {
   box-shadow: 0 5px 12px #adadad;
 }
 
+/*---------- [ LIKE BUTTONS ] --------- */
 .like-btn {
-  font-size: 1.6em;
   margin: 20px;
 }
 .like-btn .fa-stack {
   width: 30px;
   height: 30px;
-  line-height: unset;
 }
 .like-btn .fas {
   background-image: linear-gradient(160deg, #9356dc 1%, #ff79da 99%);
@@ -301,14 +333,24 @@ h2 {
   -webkit-background-clip: text;
 }
 
-.container {
+/*--------- [ SECTION TUTORIAL ]-----------*/
+.tutorial {
   width: 100%;
 }
-.container .wrapper {
-  max-width: 1280px;
+.tutorial__title {
+  font-size: 1.5em;
+}
+.tutorial__steps {
   width: 100%;
-  margin: 0 auto;
-  padding: 50px 20px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/*---------- [ RESTAURANTS SECTION ] --------- */
+.restaurants {
+  width: 100%;
+  background: #f6f6f6;
+  padding-bottom: 20px;
 }
 
 .hero {
@@ -321,13 +363,14 @@ h2 {
   height: 100%;
 }
 
+/*--------- [ SECTION MENU ]-----------*/
 .menu {
-  margin-top: -50px;
+  margin-top: -35px;
   position: relative;
 }
 .menu .wrapper--menu {
   border-radius: 40px 40px 0 0;
-  padding: 25px 15px;
+  padding: 22px 15px;
   background: #f6f6f6;
   overflow: hidden;
 }
@@ -386,19 +429,14 @@ h2 {
   display: block;
   overflow: hidden;
   white-space: nowrap;
-  line-height: 1.5em;
 }
 .menu-card__title {
-  font-size: 1.2em;
-  font-weight: 600;
   text-overflow: ellipsis;
   display: block;
   overflow: hidden;
   white-space: nowrap;
 }
 .menu-card__description {
-  font-size: 1em;
-  font-weight: 100;
   text-overflow: ellipsis;
   display: block;
   overflow: hidden;
@@ -412,7 +450,6 @@ h2 {
 .menu-card__price {
   margin: 0 20px 10px 5px;
   font-weight: 500;
-  font-size: 0.95em;
 }
 .menu-card__check-icon {
   background: #99e2d0;
@@ -426,7 +463,6 @@ h2 {
   transition: 0.4s;
 }
 .menu-card__check-icon .fa-check {
-  font-size: 0.8em;
   color: #99e2d0;
   background: #fff;
   border-radius: 100%;
@@ -443,6 +479,15 @@ h2 {
 }
 .menu-card:hover .fa-check {
   transform: rotate(0deg);
+}
+
+.container {
+  width: 100%;
+}
+.container .wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
 /* ---- [ Responsive Tutorial ] ---- */
@@ -526,7 +571,7 @@ h2 {
   transform: scale(1.3);
 }
 
-/*---------- [ RESTAURANTS EXPLORER ] --------- */
+/*---------- [ EXPLORE RESTAURANTS HERO ] --------- */
 .explorer {
   background: #f6f6f6;
   text-align: center;
@@ -555,20 +600,7 @@ h2 {
   margin-bottom: 12px;
 }
 
-/*--------- [ SECTION TUTORIAL ]-----------*/
-.tutorial {
-  width: 100%;
-}
-.tutorial__title {
-  font-size: 1.5em;
-}
-.tutorial__steps {
-  width: 100%;
-  padding: 0;
-  margin-top: 5px;
-}
-
-/*---- STEP COMMAND ----*/
+/*---- STEP TUTORIAL ----*/
 .step {
   width: 100%;
   height: 75px;
@@ -605,13 +637,6 @@ h2 {
   color: #7e7e7e;
 }
 
-/*---------- [ RESTAURANTS SECTION ] --------- */
-.restaurants {
-  width: 100%;
-  background: #f6f6f6;
-  padding-bottom: 20px;
-}
-
 /* RESTAURANT CARD */
 .restaurant {
   position: relative;
@@ -636,7 +661,7 @@ h2 {
   background: #99e2d0;
   border-radius: 2px;
 }
-.restaurant__pix {
+.restaurant__photo {
   object-fit: cover;
   width: 100%;
   height: 70%;
@@ -671,9 +696,6 @@ h2 {
 .footer__logo {
   margin-bottom: 15px;
 }
-.footer__list {
-  line-height: 1.7em;
-}
 .footer__link {
   color: #fff;
   font-weight: 100;
@@ -684,12 +706,6 @@ h2 {
 .footer__icon {
   width: 10px;
   margin-right: 15px;
-}
-.footer .fa-utensils {
-  font-size: 0.8em;
-}
-.footer .fa-hands-helping {
-  font-size: 0.7em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,3 +13,25 @@
     @include hoverShadow;
   }
 }
+
+/*---------- [ LIKE BUTTONS ] --------- */
+.like-btn {
+  margin: 20px;
+  .fa-stack {
+    width: 30px;
+    height: 30px;
+  }
+  & .fas {
+    @include heart-gradient;
+    display: none;
+  }
+  &:hover {
+    .fas {
+      @include like-hover;
+    }
+    .far {
+      transition: 0.3s;
+      @include heart-gradient;
+    }
+  }
+}
