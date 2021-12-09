@@ -333,6 +333,35 @@ h2 {
   -webkit-background-clip: text;
 }
 
+/*---------- [ EXPLORE RESTAURANTS HERO ] --------- */
+.explorer {
+  background: #f6f6f6;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.explorer__localisation {
+  height: 50px;
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explorer__localisation p {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.explorer__localisation .fas {
+  margin: 17px;
+}
+.explorer__quote {
+  padding: 36px 35px 30px;
+}
+.explorer__quote strong {
+  margin-bottom: 12px;
+}
+
 /*--------- [ SECTION TUTORIAL ]-----------*/
 .tutorial {
   width: 100%;
@@ -346,6 +375,43 @@ h2 {
   margin-top: 5px;
 }
 
+/* --> Tutorial steps */
+.step {
+  width: 100%;
+  height: 75px;
+  margin: 20px 0 7px 11px;
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  box-shadow: 0 3px 15px #d6d6d6;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.step:hover {
+  background: #f4eefc;
+}
+.step:hover .step__icon {
+  color: #9356dc;
+}
+.step__number {
+  background: #9356dc;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -11px;
+  margin-right: 20px;
+}
+.step__icon {
+  display: block;
+  width: 22px;
+  margin-right: 20px;
+  color: #7e7e7e;
+}
+
 /*---------- [ RESTAURANTS SECTION ] --------- */
 .restaurants {
   width: 100%;
@@ -353,6 +419,52 @@ h2 {
   padding-bottom: 20px;
 }
 
+/* --> RESTAURANT CARD */
+.restaurant {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 257px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px lightgray;
+  transition: box-shadow 0.2s;
+}
+.restaurant:hover {
+  box-shadow: 0 5px 12px #adadad;
+}
+.restaurant__new-feature {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  padding: 6px 13px;
+  color: #278870;
+  background: #99e2d0;
+  border-radius: 2px;
+}
+.restaurant__photo {
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant__infos {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.restaurant .like-btn {
+  display: inline-block;
+  margin: 5px 10px 0 0;
+}
+.restaurant .fas {
+  display: none;
+  color: #f6f6f6;
+}
+
+/*----- [ SECTION HERO BACKGROUND ]----*/
 .hero {
   width: 100%;
   height: 270px;
@@ -489,6 +601,10 @@ h2 {
   margin: 0 auto;
   padding: 50px 20px;
 }
+.container .wrapper--menu {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 /* ---- [ Responsive Tutorial ] ---- */
 @media screen and (min-width: 992px) {
@@ -569,117 +685,6 @@ h2 {
 }
 .header__back-link:hover {
   transform: scale(1.3);
-}
-
-/*---------- [ EXPLORE RESTAURANTS HERO ] --------- */
-.explorer {
-  background: #f6f6f6;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.explorer__localisation {
-  height: 50px;
-  background: #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.explorer__localisation p {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  text-align: left;
-}
-.explorer__localisation .fas {
-  margin: 17px;
-}
-.explorer__quote {
-  padding: 36px 35px 30px;
-}
-.explorer__quote strong {
-  margin-bottom: 12px;
-}
-
-/*---- STEP TUTORIAL ----*/
-.step {
-  width: 100%;
-  height: 75px;
-  margin: 20px 0 7px 11px;
-  display: flex;
-  align-items: center;
-  background: #f6f6f6;
-  box-shadow: 0 3px 15px #d6d6d6;
-  border-radius: 20px;
-  transition: 0.3s;
-}
-.step:hover {
-  background: #f4eefc;
-}
-.step:hover .step__icon {
-  color: #9356dc;
-}
-.step__number {
-  background: #9356dc;
-  color: #fff;
-  width: 26px;
-  height: 26px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -11px;
-  margin-right: 20px;
-}
-.step__icon {
-  display: block;
-  width: 22px;
-  margin-right: 20px;
-  color: #7e7e7e;
-}
-
-/* RESTAURANT CARD */
-.restaurant {
-  position: relative;
-  display: block;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  width: 100%;
-  height: 257px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px lightgray;
-  transition: box-shadow 0.2s;
-}
-.restaurant:hover {
-  box-shadow: 0 5px 12px #adadad;
-}
-.restaurant__new-feature {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  padding: 6px 13px;
-  color: #278870;
-  background: #99e2d0;
-  border-radius: 2px;
-}
-.restaurant__photo {
-  object-fit: cover;
-  width: 100%;
-  height: 70%;
-  border-radius: 15px 15px 0 0;
-}
-.restaurant__infos {
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.restaurant .like-btn {
-  display: inline-block;
-  margin: 5px 10px 0 0;
-}
-.restaurant .fas {
-  display: none;
-  color: #f6f6f6;
 }
 
 /*---------- [ FOOTER ] --------- */

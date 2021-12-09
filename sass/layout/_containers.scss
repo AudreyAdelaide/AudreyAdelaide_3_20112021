@@ -4,5 +4,9 @@
     max-width: $max-width;
     margin: $margin-center;
     padding: 50px 20px;
+    &--menu {
+      max-width: $max-width;
+      margin: $margin-center;
+    }
   }
 }
