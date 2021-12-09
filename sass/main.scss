@@ -10,9 +10,9 @@
 @import "./components/buttons";
 
 @import "./pages/home";
-@import "./pages/menu";
+@import "./pages/menus";
 
-@import "./layout/containers";
-@import "./layout/responsive";
-@import "./layout/header";
-@import "./layout/footer";
+@import "./layouts/header";
+@import "./layouts/containers";
+@import "./layouts/responsive";
+@import "./layouts/footer";
