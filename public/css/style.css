@@ -179,7 +179,7 @@ h2 {
     transform: scale(0);
   }
 }
-/* ----------[ Home like hover ]------------- */
+/* ----------[ like hover ]------------- */
 @keyframes background-position {
   to {
     background-size: 200% 100%;
@@ -217,7 +217,7 @@ h2 {
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 /*---------- [ LOADER ] --------- */
