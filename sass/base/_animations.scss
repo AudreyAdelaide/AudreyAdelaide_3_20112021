@@ -1,4 +1,4 @@
-/* --------- [ Loader animation ]---------- */
+/* --------- [ LOADER ANIMATION ]---------- */
 
 /* -> Unlock scroll */
 @keyframes afterLoad {
@@ -43,18 +43,18 @@
   }
 }
 
-/* ----------[ like hover ]------------- */
-
-@keyframes background-position {
+/* ----------[ LIKE BTN ]------------- */
+@keyframes background-size {
   to {
     background-size: 200% 100%;
   }
 }
 
-/* ----------[ menu list ]------------- */
+/* ----------[ MENU LIST ]------------- */
 
+/* -> fade-in from bottom to top */
 @for $i from 1 to 5 {
-  .menu-card__link:nth-of-type(#{$i}) {
+  .menu__cards--item:nth-of-type(#{$i}) {
     opacity: 0;
     animation: fade-in 1s forwards;
     animation-delay: $i * 250ms;

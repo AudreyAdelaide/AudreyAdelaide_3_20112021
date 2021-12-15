@@ -4,7 +4,6 @@ body {
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
   font-size: $large;
   font-weight: 500;
 }
@@ -41,32 +40,37 @@ h2 {
   }
 }
 
-// ---> HOME HERO
-.explorer {
-  &__localisation {
-    font-size: $normal;
-    font-weight: 500;
-    color: #353535;
-  }
-  &__quote {
-    & h2 {
-      font-size: $xx-medium;
-      font-weight: 600;
+// ---> HOME LOCALISATION
+
+.localisation {
+  &__search {
+    &--position {
+      font-size: $normal;
+      font-weight: 500;
+      color: #353535;
     }
-    & p {
-      font-size: $x-normal;
-      font-weight: 100;
+  }
+  &__explore {
+    &--quote {
+      h2 {
+        font-size: $xx-medium;
+        font-weight: 600;
+      }
+      p {
+        font-size: $x-normal;
+        font-weight: 100;
+      }
     }
   }
 }
 
 // ---> HOME - TUTORIAL
-.step {
+.tutorial__steps {
   font-size: $normal;
-  &__icon {
+  &--icon {
     font-size: $xx-normal;
   }
-  &__text {
+  &--text {
     font-weight: 500;
   }
 }
@@ -77,58 +81,62 @@ h2 {
   font-size: $xx-medium;
   font-weight: 600;
 }
-
-// ---> HOME - CARDS
-.restaurant {
-  &__new-feature {
-    font-size: $normal;
-    font-weight: 600;
-  }
-  &__infos {
-    font-size: $x-normal;
-    line-height: $x-medium;
-  }
-  &__position {
-    font-weight: 100;
-  }
-  &__icon {
-    font-size: 1.5em;
+.restaurants {
+  &__cards {
+    &--newfeature {
+      font-size: $normal;
+      font-weight: 600;
+    }
+    &--informations {
+      font-size: $x-normal;
+      line-height: $x-medium;
+    }
+    &--localisation {
+      font-weight: 100;
+    }
   }
 }
 
 // ---> MENU - CARDS
-.menu-cards__title {
-  font-size: $normal;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.menu-card {
-  &__title {
-    font-size: 1.2em;
-    font-weight: 600;
+
+.menu {
+  &__header {
+    &--title {
+      font-family: "Shrikhand", cursive;
+      font-size: 1.7em;
+      font-weight: 500;
+    }
   }
-  &__infos {
-    line-height: $x-medium;
-  }
-  &__description {
-    font-size: $normal;
-    font-weight: 100;
-  }
-  &__price {
-    font-size: $small;
-  }
-  & .fa-check {
-    font-size: $small;
+  &__cards {
+    &--title {
+      font-size: $normal;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    &--name {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+    &--description {
+      line-height: $x-medium;
+    }
+    &--price {
+      font-size: $small;
+    }
+    &--add {
+      font-size: $small;
+    }
   }
 }
 
 // ---> FOOTER
 .footer {
-  &__logo {
+  &__title {
+    font-family: "Shrikhand", cursive;
     font-weight: 100;
     font-size: $x-normal;
   }
-  &__list {
+  &__links {
     line-height: 1.7em;
   }
   & .fa-utensils {

@@ -19,7 +19,6 @@
   &--position {
     position: fixed;
   }
-
   &__container {
     display: inline-block;
     position: relative;
@@ -39,19 +38,19 @@
       animation: loader1 0.6s infinite;
     }
     &:nth-child(2) {
-      @include btnGradient;
+      @include gradient;
       z-index: 100;
       left: 15px;
       animation: loader2 0.6s infinite;
     }
     &:nth-child(3) {
-      @include btnGradient;
+      @include gradient;
       z-index: 100;
       left: 45px;
       animation: loader2 0.6s infinite;
     }
     &:nth-child(4) {
-      @include btnGradient;
+      @include gradient;
       z-index: 100;
       left: 75px;
       animation: loader2 0.6s infinite;

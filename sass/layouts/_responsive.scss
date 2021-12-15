@@ -1,51 +1,48 @@
-/* ---- [ Responsive Tutorial ] ---- */
+/* ---- [ HOME - TUTORIAL ] ---- */
 .tutorial__steps {
   @include desktop {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-}
-.step {
-  @include desktop {
-    margin-left: 20px;
-    // Obligée de mettre max-width afin que le changement
-    // de taille soit prit en compte
-    max-width: 30%;
+  &--item {
+    @include desktop {
+      margin-left: 20px;
+      max-width: 30%;
+    }
+  }
+  &--number {
+    @include flexCenter;
   }
 }
 
-/* ---- [ Responsive Restaurants ] ----*/
-.restaurants__cards {
+/* ---- [ HOME - RESTAURANTS ] ----*/
+.restaurants {
+  &__cards {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &--item {
+      @include desktop {
+        max-width: 49%;
+      }
+    }
+  }
+}
+
+/* ---- [ MENU ] ---- */
+.menu__cards {
   @include desktop {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-}
-.restaurant {
-  @include desktop {
-    max-width: 49%;
-  }
-}
-
-/* ---- [ Responsive restaurant page ] ---- */
-.menu-cards {
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.menu-list {
-  @include desktop {
-    width: 96%;
-    max-width: 400px;
-  }
-}
-
-.menu__item {
-  @include desktop {
-    justify-content: space-between;
+  &--list {
+    @include desktop {
+      width: 30%;
+      max-width: 400px;
+    }
   }
 }

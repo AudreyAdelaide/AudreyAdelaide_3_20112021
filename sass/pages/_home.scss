@@ -1,76 +1,76 @@
-/*---------- [ EXPLORE RESTAURANTS HERO ] --------- */
-.explorer {
+/*---------- [ SECTION LOCALISATION ] --------- */
+.localisation {
   background: $light-grey-color;
   text-align: center;
   padding-bottom: 50px;
-  &__localisation {
+  &__search {
     height: 50px;
     background: $medium-grey-color;
     @include flexCenter;
-    & p {
-      display: block;
-      width: 200px;
-      margin: $margin-center;
-      text-align: left;
-    }
-    & .fas {
-      margin: 17px;
+    &--position {
+      & p {
+        display: block;
+        width: 200px;
+        margin: $margin-center;
+        text-align: left;
+      }
+      & .fas {
+        margin: 17px;
+      }
     }
   }
-  &__quote {
-    padding: 36px 35px 30px;
-    & strong {
-      margin-bottom: 12px;
+  &__explore {
+    &--quote {
+      padding: 36px 35px 30px;
+      & h2 {
+        margin-bottom: 12px;
+      }
     }
   }
 }
 
 /*--------- [ SECTION TUTORIAL ]-----------*/
 .tutorial {
-  width: $full-width;
-  &__title {
-    font-size: 1.5em;
-  }
   &__steps {
-    width: $full-width;
     padding: 0;
-    margin-top: 5px;
-  }
-}
-
-/* --> Tutorial steps */
-
-.step {
-  width: $full-width;
-  height: 75px;
-  margin: 20px 0 7px 11px;
-  display: flex;
-  align-items: center;
-  background: $light-grey-color;
-  box-shadow: 0 3px 15px rgb(214, 214, 214);
-  border-radius: 20px;
-  transition: 0.3s;
-  &:hover {
-    background: lighten(#9356dc, 36%);
-    .step__icon {
-      color: $primary-color;
+    &--card {
+      display: flex;
+      align-items: center;
     }
-  }
-  &__number {
-    background: $primary-color;
-    color: #fff;
-    width: 26px;
-    height: 26px;
-    border-radius: 100%;
-    @include flexCenter;
-    margin-left: -11px;
-    margin-right: 20px;
-  }
-  &__icon {
-    display: block;
-    width: 22px;
-    margin-right: 20px;
-    color: $icon-grey-color;
+    &--item {
+      width: $full-width;
+      height: 75px;
+      margin: 20px 0 7px 11px;
+      display: flex;
+      align-items: center;
+      background: $light-grey-color;
+      box-shadow: 0 3px 15px rgb(214, 214, 214);
+      border-radius: 20px;
+      transition: 0.3s;
+      &:hover {
+        background: lighten(#9356dc, 36%);
+        & .tutorial__steps--icon {
+          color: $primary-color;
+        }
+      }
+    }
+    &--number {
+      display: inline-block;
+      background: $primary-color;
+      color: #fff;
+      width: 26px;
+      height: 26px;
+      border-radius: 100%;
+      @include flexCenter;
+      margin-left: -11px;
+      margin-right: 20px;
+    }
+    &--icon {
+      display: block;
+      width: 22px;
+      margin-right: 20px;
+      color: $icon-grey-color;
+    }
   }
 }
 
@@ -79,49 +79,49 @@
   width: 100%;
   background: $light-grey-color;
   padding-bottom: 20px;
-}
-
-/* --> RESTAURANT CARD */
-.restaurant {
-  position: relative;
-  display: block;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  width: $full-width;
-  height: 257px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgb(211, 211, 211);
-  transition: box-shadow 0.2s;
-  &:hover {
-    @include hoverShadow;
-  }
-  &__new-feature {
-    position: absolute;
-    right: 10px;
-    top: 15px;
-    padding: 6px 13px;
-    color: darken($tertiary-color, 40%);
-    background: $tertiary-color;
-    border-radius: 2px;
-  }
-  &__photo {
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-    border-radius: 15px 15px 0 0;
-  }
-  &__infos {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  & .like-btn {
-    display: inline-block;
-    margin: 5px 10px 0 0;
-  }
-  & .fas {
-    display: none;
-    color: #f6f6f6;
+  &__cards {
+    &--item {
+      position: relative;
+      display: block;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      width: $full-width;
+      height: 257px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgb(211, 211, 211);
+      transition: box-shadow 0.2s;
+      &:hover {
+        @include hoverShadow;
+      }
+    }
+    &--photo {
+      object-fit: cover;
+      width: 100%;
+      height: 70%;
+      border-radius: 15px 15px 0 0;
+    }
+    &--newfeature {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      padding: 6px 13px;
+      color: darken($tertiary-color, 40%);
+      background: $tertiary-color;
+      border-radius: 2px;
+    }
+    &--informations {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    & .like-btn {
+      display: inline-block;
+      margin: 5px 10px 0 0;
+    }
+    & .fas {
+      display: none;
+      color: #f6f6f6;
+    }
   }
 }

@@ -1,12 +1,18 @@
 .container {
   width: $full-width;
-  & .wrapper {
+}
+
+.wrapper {
+  max-width: $max-width;
+  margin: $margin-center;
+  padding: 50px 20px;
+  &__menu {
     max-width: $max-width;
     margin: $margin-center;
-    padding: 50px 20px;
-    &--menu {
-      max-width: $max-width;
-      margin: $margin-center;
-    }
+  }
+  &__footer {
+    max-width: $max-width;
+    margin: $margin-center;
+    padding: 20px;
   }
 }

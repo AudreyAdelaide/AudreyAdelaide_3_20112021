@@ -5,11 +5,11 @@
   color: #fff;
   border: none;
   @include shadowBox;
-  @include btnGradient;
+  @include gradient;
   transition: 0.1s;
   cursor: pointer;
   &:hover {
-    @include btnGradientLightness;
+    @include gradientLightness;
     @include hoverShadow;
   }
 }
@@ -22,7 +22,7 @@
     height: 30px;
   }
   & .fas {
-    @include heart-gradient;
+    @include gradientText;
     display: none;
   }
   &:hover {
@@ -31,7 +31,7 @@
     }
     .far {
       transition: 0.3s;
-      @include heart-gradient;
+      @include gradientText;
     }
   }
 }
